@@ -1,0 +1,9 @@
+<div class="row">
+  <% @tasks.each do |task| %>
+    <div class="col-xs-6 col-md-3">
+      <%= link_to task_path(task) do %>
+        <%= task.title %>
+      <% end %>
+    </div>
+  <% end %>
+</div>
