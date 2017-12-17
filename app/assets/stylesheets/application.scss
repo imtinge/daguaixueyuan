@@ -16,8 +16,95 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
 
+// global css
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;                                   // footer固定底部
+  display: flex;                                       // footer固定底部
+  flex-direction: column;
+  font-family: Verdana,"Helvetica Neue",Helvetica, "Nimbus Sans L", Arial, "Liberation Sans",
+  "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN", "Source Han Sans SC",
+  "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei,
+  "WenQuanYi Zen Hei Sharp", sans-serif;
+  background-color: #f9f9fa;
+  color: #333;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+}
 
- .field_with_errors {
+.navbar {
+  margin-bottom: 0;
+  background-color: #333;
+  border: none;
+  border-radius: 0;
+  letter-spacing: 0.05em;
+  .navbar-brand {
+    padding-top: 0px;
+    img {
+      width: 190px;
+      height: 50px;
+    }
+  }
+  .navbar-collapse {
+    .navbar-nav {
+      > li{
+        > a {
+          color: #eee;
+          &:hover, &:focus {
+            color: #bbb;
+          }
+        }
+      }
+      .dropdown {
+        .dropdown-menu {
+          // background-color: #333;
+          // color: #333;
+          a {
+            // color: #333;s
+          }
+        }
+      }
+    }
+  }
+}
+
+footer {
+  background-color: #EAEEF1;
+  .logo-part {
+    margin: 20px auto 30px;
+  }
+  .list-part {
+    ul {
+      list-style: none;
+      li {
+        padding-left: 30%;
+        font-size: 1.2em;
+        &.first-line {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  .img-part {
+    clear: left;
+    margin: 0px auto 20px;
+  }
+  .white-space {
+    border: 2px solid white;
+    margin: auto -15px ;
+  }
+  .footer-down {
+    border-top: 3px solid white;
+    height: 50px;
+    p {
+      margin-top: 10px;
+    }
+  }
+}
+
+.field_with_errors {
    @extend .has-error;
    .form-control {
      color: $state-danger-text;
@@ -25,4 +112,4 @@
    .error {
      color: $state-danger-text;
    }
- }
+}

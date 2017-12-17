@@ -1,0 +1,17 @@
+<div class="task-container col-md-8 col-md-offset-2">
+  <div class="pull-right">
+    <%= link_to "领取任务", admin_tasks_path, class:"btn btn-primary" %>
+  </div>
+  <p>
+    <strong>标题:</strong>
+    <%= @task.title %>
+  </p>
+
+  <p>
+    <strong>内容:</strong>
+    <div class="markdown">
+      <%= markdown(@task.content) %>
+    </div>
+  </p>
+
+</div>

@@ -3,6 +3,7 @@ class Admin::TasksController < ApplicationController
   before_action :require_is_admin
 
   def index
+    @tasks = Task.all
   end
 
   def new

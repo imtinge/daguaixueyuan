@@ -1,9 +1,45 @@
-<div class="row">
-  <% @tasks.each do |task| %>
-    <div class="col-xs-6 col-md-3">
-      <%= link_to task_path(task) do %>
-        <%= task.title %>
-      <% end %>
+<div class="row user-info">
+  <div class="container">
+    <div class="img col-sm-3">
+      <%= image_tag "header-mon.png", alt: "monster", class: "img-responsive" %>
     </div>
-  <% end %>
+    <div class="info col-sm-9">
+      <div class="col-sm-4">
+        <img src="http://via.placeholder.com/150x150/#">
+        <div>
+          <%= link_to "关注", "#", class: "btn btn-primary btn-sm" %>
+          <%= link_to "留言", "#", class: "btn btn-primary btn-sm" %>
+        </div>
+      </div>
+      <div class="col-sm-8">
+        <h4>用户名</h4>
+        <p>所在城市：</p>
+        <p>加入的战队:</p>
+        <p>正在进行的任务：</p>
+        <br><br>
+        <span>所做任务数</span>
+        <span>拥有学币</span>
+        <span>学币充值</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="user-tasks">
+  <div class="container">
+    <% @tasks.each do |task| %>
+      <div class="task-item col-xs-12">
+        <div class="col-sm-3 image">
+          <%= image_tag "task.png", alt:"task" %>
+        </div>
+        <div class="col-xs-6 detail">
+          <p><%= link_to task.title, task_path(task) %> </p>
+          <p>任务等级：<%= "1" %></p>
+        </div>
+        <div class="col-xs-3 buttons">
+          <button class="btn btn-primary">已完成</button>
+        </div>
+      </div>
+    <% end %>
+  </div>
 </div>

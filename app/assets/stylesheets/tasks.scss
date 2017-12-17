@@ -1,3 +1,59 @@
 // Place all the styles related to the tasks controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.user-info {
+  background-color: #EAEEF1;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  .container {
+    .img {
+      margin-top: -10px;
+    }
+    .info {
+      color: #4A67AA;
+      font-size: 1.2em;
+      background-color: white;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      img {
+        border-radius: 50%;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .img {
+    img {
+      // border-radius: 50%;
+    }
+  }
+}
+
+.user-tasks {
+  background-color: white;
+  padding-bottom: 30px;
+  .container {
+    .task-item {
+      border-bottom: 3px solid #EAEEF1;
+      padding-bottom: 15px;
+      padding-top:15px;
+      .detail {
+        padding-top: 40px;
+        p {
+          a {
+            color: black;
+            text-decoration: none;
+            &:hover, &:focus {
+              color: #888;
+            }
+          }
+          color: black;
+          vertical-align: middle;
+        }
+      }
+      .buttons {
+        padding-top: 60px;
+      }
+    }
+    }
+
+}
