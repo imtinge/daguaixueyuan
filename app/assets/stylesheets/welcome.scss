@@ -1,3 +1,102 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.lp {
+  background-image: url("lp-bg.png");
+  background-color: #93b3e2;
+  // position: relative;
+  .img-header {
+    background: url("lp01.png") no-repeat center top;
+    height: 806px;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+}
+
+.ask {
+  .ask-left {
+    max-height: 220px;
+    max-width: 400px;
+    background: url("ask-left.png") no-repeat center;
+  }
+  .ask-right {
+    background: url("ask-right.png") no-repeat center top;
+  }
+}
+
+ .img-header .join-btn {
+	width: 278px;
+	height: 63px;
+	position: relative;
+	margin: 510px auto 0;
+	transition: all .2s
+}
+
+ .img-header .join-btn a {
+	display: block;
+	height: 63px;
+	border: 3px #303333 solid;
+	border-radius: 20px;
+	background-color: #fff;
+	font-size: 34px;
+	line-height: 56px;
+	text-align: center;
+	color: #313333;
+	position: relative;
+	z-index: 2
+}
+
+ .img-header .join-btn:after {
+	transition: all .2s
+}
+
+ .img-header .join-btn:hover:after {
+	top: 0
+}
+
+ .img-header .join-btn:hover {
+	margin: 514px auto -10px;
+}
+
+.shadow:after {
+	content: "";
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 13px;
+	border: 3px #303333 solid;
+	border-radius: 20px;
+	background: url(dian.png) center -2px;
+	z-index: 1
+}
+
+.line {
+	height: 18px;
+	line-height: 18px;
+	text-align: center;
+	position: relative;
+	width: 1230px;
+	margin: 0 auto;
+}
+
+.line:after {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 10px;
+	border-bottom: 1px #030000 dashed;
+	width: 100%;
+}
+
+.line span {
+	font-size: 18px;
+	color: #666;
+	padding: 0 20px;
+	display: inline-block;
+	background-color: #ffd600;
+	position: relative;
+	z-index: 2
+}
