@@ -12,9 +12,9 @@ require 'mina/rbenv'  # for rbenv support. (https://rbenv.org)
 #   branch       - Branch name to deploy. (needed by mina/git)
 
 set :application_name, 'pets-home-again'
-set :domain, 'apps@xx.xx.xx.xx'
-set :deploy_to, '/var/www/pets-home-again'
-set :repository, 'git://github.com/imtinge/pets-home.git'
+set :domain, 'apps@119.23.107.243'
+set :deploy_to, '/var/www/daguaixueyuan'
+set :repository, 'git://github.com/newjourney57/daguaixueyuan.git'
 set :branch, 'master'
 
 # Optional settings:
