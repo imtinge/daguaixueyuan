@@ -19,3 +19,10 @@
 
 # Ignore Byebug command history file.
 .byebug_history
+
+/app/assets/images/front page/*
+/app/assets/images/no compass/*
+
+database.yml
+puma.rb
+secrets.yml
