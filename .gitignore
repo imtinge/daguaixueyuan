@@ -26,3 +26,6 @@
 database.yml
 puma.rb
 secrets.yml
+config/deploy/
+config/deploy.rb
+Capfile
